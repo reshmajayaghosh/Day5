@@ -1,0 +1,21 @@
+<div class="background">
+    <div class="todo"><h1 >My Todo-List </h1>
+</div>
+<div class="container " >
+    <div class="box ">
+    @for(item of data;track item.id){
+<div class="todo-item">
+            <input type="checkbox" class="" name="select" id="" value="1">
+            <p [ngClass]="item.completed ? 'compl strikethrough' : 'strikethrough'">
+                {{item.completed ? " " : ""}}{{item.title}}
+            </p>
+
+            
+            
+            
+            <!-- <p>{{item.title}}</p> -->
+    </div>
+    }
+</div>
+</div>
+</div>
